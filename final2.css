@@ -1,0 +1,48 @@
+/* Cuerpo */
+
+.cc {
+    font-size: 50px;
+    margin-left: 350px;
+    color: blueviolet;
+}
+
+.tabs-second {
+    margin-left: 600px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    font-family: sans-serif;
+}
+
+.tabs-label-second {
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.tabs-radio-second {
+    display: none;
+}
+
+.tabs-content-second {
+    order: 1;
+    width: 100%;
+    display: none;
+}
+
+.tabs-radio-second:checked+.tabs-label-second {
+    font-weight: bold;
+    /* color: #009576; */
+    color: #23874b;
+    border-bottom: 1.5px solid #23874b;
+}
+
+.tabs-radio-second:checked+.tabs-label-second+.tabs-content-second {
+    display: initial;
+}
+
+.objeto-final {
+    margin-bottom: 100%;
+    margin-left: 1050px;
+    color: black;
+}
