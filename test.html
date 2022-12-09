@@ -9,8 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="final2.css">
     <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body style="overflow:hidden">
     
     <!-- navbar
     navbar
@@ -59,7 +60,7 @@
             <li class="list">
                 <b></b>
                 <b></b>
-                <a href="Final.html">
+                <a href="/Final.html">
                     <span class="icon d-flex align-items-center justify-content-center">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -108,44 +109,55 @@
     <!-- cuerpo -->
     <!-- cuerpo -->
     <!-- cuerpo -->
+
+        <div class="bats" style="overflow:auto; position:absolute; top:50px; bottom:50px;">
+            <i class="bi bi-cc-circle-fill" id="iperfil"></i>
+            <p id="mine">Asignado a mí</p>
+
+            <input type="radio" class="bats-radio" name="bats-example" id="bat1">
+            <label for="bat1" class="bats-label">Cuadrícula</label> 
+            <div class="bats-content" style="padding-bottom: 400px;">
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert" style="font-size: 20px; margin-top: 20px; width: 75%;">
+                        <i class="bi bi-exclamation-triangle-fill" style="padding-right: 20px;"></i>
+                        Por el momento no se encontró nada
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+            </div>
+
+            <input type="radio" class="bats-radio" name="bats-example" id="bat2">
+            <label for="bat2" class="bats-label">Panel</label> 
+            <div class="bats-content" style="padding-bottom: 400px;">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert" style="font-size: 20px; margin-top: 20px; width: 75%;">
+                    <i class="bi bi-exclamation-circle-fill" style="padding-right: 20px;"></i>
+                    Por el momento no se encontró nada
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+ 
+            <input type="radio" class="bats-radio" name="bats-example" id="bat3">
+            <label for="bat3" class="bats-label">Gráficos</label> 
+            <div class="bats-content">
+                <div class="status col-6">
+                    <a href="#">
+                        <img src="/estado.png" alt="Estado" id="status">
+                    </a>
+                    
+                </div>
+                <div class="priority col-6">
+                    <img src="/prio.png" alt="Prioridad" id="priority">
+                </div>
+                <div class="plane col-12">
+                    <img src="/plan.png" alt="Prioridad" id="plane">
+                </div>
+            </div>
+
+            <input type="radio" class="bats-radio" name="bats-example" id="bat4">
+            <label for="bat4" class="bats-label">Programación</label> 
+            <div class="bats-content" id="body">
+                <div id='calendar'></div>
+            </div>
+        </div>
     
-    <div>
-        <div>
-            <i class="bi bi-cc-circle-fill cc"></i>
-            <p style="margin-left: 450px;">Asignado a mí</p>
-        </div>
-        <div class="tabs-second">
-            <input type="radio" class="tabs-radio-second" name="tabs-example" id="tab1" checked>
-            <label for="tab1" class="tabs-label-second">Cuadrícula</label>
-            <div class="tabs-content-second" id="IS2">
-                dshfj;lasdjfas;ldjfa
-            </div>
-
-            <input type="radio" class="tabs-radio-second" name="tabs-example">
-            <label for="tab2" class="tabs-label-second">Panel</label>
-            <div class="tabs-content-second" id="OS2">
-                oidsafj;awfldujadsf0'apsfj[AOIDFPHASD;]
-            </div>
-
-            <input type="radio" class="tabs-radio-second" name="tabs-example">
-            <label for="tab2" class="tabs-label-second">Gráficos</label>
-            <div class="tabs-content-second" id="AS2">
-                ohdsak;lfj;asdfljas;dfkljas;d
-            </div>
-
-            <input type="radio" class="tabs-radio-second" name="tabs-example">
-            <label for="tab2" class="tabs-label-second">Programación</label>
-            <div class="tabs-content-second" id="US2">
-                powujfspoasjdf[posajs'pasouj]
-            </div>
-        </div>
-        <div>
-            <a class="objeto-final" href="#" role="button">
-                <i class="bi bi-three-dots"></i>
-            </a>
-        </div>
-    </div>
-
     <!-- modal -->
     <!-- modal -->
     <!-- modal -->
@@ -175,7 +187,7 @@
                       </div>
                     </div>
                     <div class="mb-3">
-                      <p for="message-text" class="col-form-p" style="font-size: small; margin-top: 30px; margin-bottom: 5px;">Privacidad</p>
+                      <p for="message-text" class="col-form-p" style="font-size: small; margin-top: 30px; margin-bottom: 10px;">Privacidad</p>
                       <input type="radio" name="personas" id="publico"> 
                       <label for="public"> Público: cualquier miembro de mi organización puede ver el contenido del plan</label>
                     </div>
@@ -212,10 +224,11 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
     <script src="/final.js"></script>
 
     <script>
@@ -238,6 +251,38 @@
         }
     </script>
 
+
+    <!-- calendar -->
+
+    <script>
+        const scheduleTab = document.querySelector('#bat4');
+        let isCalendarRendered = false;
+        scheduleTab.addEventListener('click', function() {
+            if(!isCalendarRendered){
+                var calendarEl = document.getElementById('calendar');
+      
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    headerToolbar: {
+                    left: 'prevYear,prev,next,nextYear today',
+                    center: 'title',
+                    right: 'dayGridMonth,dayGridWeek,dayGridDay'
+                    },
+                    initialDate: '2022-12-09',
+                    navLinks: true, // can click day/week names to navigate views
+                    editable: false,
+                    dayMaxEvents: true, // allow "more" link when too many events
+                    events: [
+                    {
+                        title: 'Proyecto Diseño Web',
+                        start: '2022-12-09'
+                    }
+                    ]
+                });
+                calendar.render();
+                isCalendarRendered = true;
+            }
+        });   
+      </script>
 </body>
 
 </html>

@@ -1,48 +1,107 @@
-/* Cuerpo */
+/*cuerpo */
 
-.cc {
+#iperfil {
     font-size: 50px;
-    margin-left: 350px;
-    color: blueviolet;
+    color: #603cba;
+    padding-top: 13px;
+    padding-right: 20px;
 }
 
-.tabs-second {
-    margin-left: 600px;
-    margin-top: 40px;
+#mine{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 100px;
+    font-family: Light Condensed;
+    font-size: 20px;
+}
+
+.bats {
     display: flex;
+    margin-top: 10px;
     flex-wrap: wrap;
-    max-width: 500px;
-    font-family: sans-serif;
+    max-width: 1000px;
+    margin-left: 350px;
+    font-family: Brice Extra Light Condensed;
 }
 
-.tabs-label-second {
+.bats-label {
     padding: 10px 16px;
     cursor: pointer;
 }
 
-.tabs-radio-second {
+.bats-radio {
     display: none;
 }
 
-.tabs-content-second {
+.bats-content {
     order: 1;
     width: 100%;
+    line-height: 2.5;
+    font-size: 0.9em;
     display: none;
+    overflow-y: visible;
 }
 
-.tabs-radio-second:checked+.tabs-label-second {
-    font-weight: bold;
-    /* color: #009576; */
-    color: #23874b;
-    border-bottom: 1.5px solid #23874b;
+.bats-radio:checked+.bats-label {
+    color: black;
+    border-bottom: 2px solid #217346;
 }
 
-.tabs-radio-second:checked+.tabs-label-second+.tabs-content-second {
+.bats-radio:checked+.bats-label+.bats-content {
     display: initial;
 }
 
-.objeto-final {
-    margin-bottom: 100%;
-    margin-left: 1050px;
+.status {
+    padding-top: 30px;
+}
+
+#status {
+    width: 300px;
+    height: 520px;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 4px #e9e9e9;
+}
+
+.priority {
+    margin-left: 320px;
+    margin-top: -520px;
+}
+
+#priority {
+    width: 500px;
+    height: 520px;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 4px #e9e9e9;
+}
+
+.plane {
+    margin-top: 30px;
+}
+
+#plane {
+    width: 820px;
+    height: 700px;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 4px #e9e9e9;
+    border-bottom: none;
+}
+
+/* calendario */
+
+#body {
+    margin: 40px 10px;
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;    
+}
+
+a.fc-col-header-cell-cushion{
+    text-decoration:none;
+    color: black;
+}
+
+a.fc-daygrid-day-number{
+    text-decoration:none;
     color: black;
 }

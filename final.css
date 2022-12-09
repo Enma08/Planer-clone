@@ -28,13 +28,14 @@
     bottom: 0px;
     width: 70px;
     box-sizing: initial;
-    background: #f1f3f4;
+    background: #f3f2f1;
     transition: width 0.5s; 
     overflow-x: hidden;
 }
 
 .navigation.active {
     width: 300px;
+    height: 100%;
 }
 
 .navigation ul {
